@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Days of Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #1a1a2e;
+            --bg-accent: #16213e;
+            --gold: #c5a059;
+            --text-light: #e0e0e0;
+            --polaroid-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        * { box-sizing: border-box; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(circle at center, #16213e 0%, #1a1a2e 100%);
+            background-attachment: fixed;
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* --- Header Section --- */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            color: var(--gold);
+            margin: 0;
+            text-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+
+        /* --- Personal Message Box --- */
+        .message-container {
+            max-width: 800px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .message-container p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* --- Polaroid Gallery --- */
+        .gallery {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            column-count: 4;
+            column-gap: 40px;
+        }
+
+        @media (max-width: 1200px) { .gallery { column-count: 3; } .message-container { margin: 20px; } }
+        @media (max-width: 900px) { .gallery { column-count: 2; } }
+        @media (max-width: 500px) { .gallery { column-count: 1; } }
+
+        .polaroid {
+            break-inside: avoid;
+            background: #fff;
+            padding: 12px 12px 50px 12px;
+            margin-bottom: 40px;
+            box-shadow: var(--polaroid-shadow);
+            transform: rotate(var(--rot));
+            display: inline-block;
+            width: 100%;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: sepia(10%);
+        }
+
+        .polaroid:hover {
+            transform: scale(1.1) rotate(0deg) translateY(-20px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+            z-index: 10;
+        }
+
+        .caption {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 15px;
+            color: #2d3436;
+            line-height: 1.2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 120px 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--gold);
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(197, 160, 89, 0.2); }
+            to { text-shadow: 0 0 25px rgba(197, 160, 89, 0.6); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>365 Days of Us</h1>
+        <div class="subtitle">Our First Anniversary • 2026</div>
+    </header>
+
+    <div class="message-container">
+        <p>
+            To my favorite person,<br><br>
+            One year ago today, we started this beautiful journey. Looking back at these photos, 
+            I realized that every single moment—the big celebrations and the quiet afternoons—has 
+            been better because you were by my side. Thank you for being you.<br><br>
+            Happy 1st Anniversary! ❤️<br><br>
+            I LOVE YOU JENATEEE
+        </p>
+    </div>
+
+    <div class="gallery">
+        <div class="polaroid" style="--rot: -2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.32 PM.jpeg" alt="Memory">
+            <div class="caption">Where time stands still.</div>
+        </div>
+        <div class="polaroid" style="--rot: 3deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.33 PM.jpeg" alt="Memory">
+            <div class="caption">My favorite view is you.</div>
+        </div>
+        <div class="polaroid" style="--rot: -1deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.33 PM (1).jpeg" alt="Memory">
+            <div class="caption">In your arms, I am home.</div>
+        </div>
+        <div class="polaroid" style="--rot: 2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.34 PM.jpeg" alt="Memory">
+            <div class="caption">Better together, always.</div>
+        </div>
+        <div class="polaroid" style="--rot: -3deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.34 PM (1).jpeg" alt="Memory">
+            <div class="caption">Every day is an adventure.</div>
+        </div>
+        <div class="polaroid" style="--rot: 1deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.34 PM (2).jpeg" alt="Memory">
+            <div class="caption">The smile that changed my life.</div>
+        </div>
+        <div class="polaroid" style="--rot: -2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.35 PM.jpeg" alt="Memory">
+            <div class="caption">You're my greatest blessing.</div>
+        </div>
+        <div class="polaroid" style="--rot: 4deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.36 PM.jpeg" alt="Memory">
+            <div class="caption">Life's better with you.</div>
+        </div>
+        <div class="polaroid" style="--rot: -1deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.36 PM (1).jpeg" alt="Memory">
+            <div class="caption">Love in every detail.</div>
+        </div>
+        <div class="polaroid" style="--rot: 3deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.36 PM (2).jpeg" alt="Memory">
+            <div class="caption">Our story is my favorite.</div>
+        </div>
+        <div class="polaroid" style="--rot: -4deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.37 PM.jpeg" alt="Memory">
+            <div class="caption">Laughter is our love language.</div>
+        </div>
+        <div class="polaroid" style="--rot: 2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.37 PM (1).jpeg" alt="Memory">
+            <div class="caption">To the moon and back.</div>
+        </div>
+        <div class="polaroid" style="--rot: -2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.37 PM (2).jpeg" alt="Memory">
+            <div class="caption">Soulmates since day one.</div>
+        </div>
+        <div class="polaroid" style="--rot: 1deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.38 PM.jpeg" alt="Memory">
+            <div class="caption">Forever isn't long enough.</div>
+        </div>
+        <div class="polaroid" style="--rot: -3deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.38 PM (1).jpeg" alt="Memory">
+            <div class="caption">Beautifully intertwined.</div>
+        </div>
+        <div class="polaroid" style="--rot: 2deg">
+            <img src="WhatsApp Image 2026-04-02 at 10.55.38 PM (2).jpeg" alt="Memory">
+            <div class="caption">Here's to a lifetime more.</div>
+        </div>
+    </div>
+
+    <footer>
+        Always & Forever ❤️
+    </footer>
+
+</body>
+</html>
